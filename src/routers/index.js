@@ -6,7 +6,7 @@ const router = new express.Router()
 
 router.get('/', (req,res,next)=>{// response
     res.status(200).send({
-        nome:'Guilherme Zapater',
+        nome:'Mateus D.',
         info: 'minha primeira rota',
         versao: 1.0
 
@@ -15,7 +15,7 @@ router.get('/', (req,res,next)=>{// response
 
 router.post('/', (req, res, next) => { //request
     console.log(req.body);
-    //reqeuest requisição que estamos recebendo
+    //request requisição que estamos recebendo
     //response é  status
     const message = 'recebido com sucesso!';
 

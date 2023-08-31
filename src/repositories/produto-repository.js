@@ -7,11 +7,7 @@ exports.get = async () => { //pega todas colecoes ativas da base
 }
 
 exports.create = async(data) => {
-    
     let produto = Produto(data) //recebe o json e cria o modelo
-
-    
-
     await produto.save();
 }
 
